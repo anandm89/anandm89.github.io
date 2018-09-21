@@ -41,7 +41,7 @@ module.exports = "a:hover { \r\n    color: red;\r\n    text-decoration: none;\r\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid text-white \">\n  <div class=\"row header\">\n    <div class=\"col-lg-2 col-md-1\"></div>\n    <div class=\"col-lg-8 col-md-10 text-uppercase\">\n      <table class=\"table\">\n        <thead>\n          <tr>\n\n            <th scope=\"col\">\n              <a routerLink=\"home\">Home</a>\n            </th>\n            <th scope=\"col\">\n              <a routerLink=\"about\">About Me</a>\n            </th>\n            <th scope=\"col\">\n              <a routerLink=\"skills\">Skills</a>\n            </th>\n            <th scope=\"col\">\n              <a routerLink=\"portfolio\">Portfolio</a>\n            </th>\n            <th scope=\"col\">\n              <a routerLink=\"experience\">Experience</a>\n            </th>\n            <th scope=\"col\">\n              <a routerLink=\"contact\">Contact</a>\n            </th>\n          </tr>\n        </thead>\n        <tbody>\n\n        </tbody>\n      </table>\n    </div>\n    <div class=\"col-lg-2 col-md-1\"></div>\n  </div>\n  <!--Header for Mobile view-->\n  <div class=\"row\">\n    <div class=\"col header-mobile text-white text-center\">\n      <span  class=\"float-right\"  id=\"nav-toggle\"   data-toggle=\"collapse\" data-target=\"#main-nav\"\n        aria-expanded=\"true\" data-backdrop=\"true\" data-keyboard=\"true\"><img src=\"/assets/menu-3x.png\"  \n        style=\"padding: 25px;\"\n        >  </span>  \n        \n    </div>\n  </div>\n  <div class=\"row\">\n    <div id=\"main-nav\"   class=\"col text-white text-center text-uppercase header-mobile-div no-padding-left no-padding-right\">\n      <div>\n        <a routerLink=\"home\">Home</a>\n      </div>\n      <div>\n        <a routerLink=\"about\">About Me</a>\n      </div>\n      <div>\n        <a routerLink=\"skills\">Skills</a>\n      </div>\n      <div>\n        <a routerLink=\"portfolio\">Portfolio</a>\n      </div>\n      <div>\n        <a routerLink=\"experience\">Experience</a>\n      </div>\n      <div>\n        <a routerLink=\"contact\">Contact</a>\n      </div>\n    </div>\n  </div>\n</div>\n\n\n<!-- all router falls here-->\n<router-outlet></router-outlet>"
+module.exports = "<div class=\"container-fluid text-white \">\n  <div class=\"row header\">\n    <div class=\"col-lg-2 col-md-1\"></div>\n    <div class=\"col-lg-8 col-md-10 text-uppercase\">\n      <table class=\"table\">\n        <thead>\n          <tr>\n\n            <th scope=\"col\">\n              <a routerLink=\"home\">Home</a>\n            </th>\n            <th scope=\"col\">\n              <a routerLink=\"about\">About Me</a>\n            </th>\n            <th scope=\"col\">\n              <a routerLink=\"skills\">Skills</a>\n            </th>\n            <th scope=\"col\">\n              <a routerLink=\"portfolio\">Portfolio</a>\n            </th>\n            <th scope=\"col\">\n              <a routerLink=\"experience\">Experience</a>\n            </th>\n            <th scope=\"col\">\n              <a routerLink=\"contact\">Contact</a>\n            </th>\n          </tr>\n        </thead>\n        <tbody>\n\n        </tbody>\n      </table>\n    </div>\n    <div class=\"col-lg-2 col-md-1\"></div>\n  </div>\n  <!--Header for Mobile view-->\n  <div class=\"row\">\n    <div class=\"col header-mobile text-white text-center\">\n      <span class=\"float-right\" data-toggle=\"collapse\" data-target=\"#collapseExample\" \n      aria-expanded=\"false\" aria-controls=\"collapseExample\">\n        <i class=\"fa fa-bars fa-2x\" aria-hidden=\"true\" style=\"padding: 20%\"></i>\n      </span>\n    </div>\n    \n  </div>\n  <div class=\"row collapse\" id=\"collapseExample\" tabindex='-1'>\n    <div id=\"main-nav\" class=\"col text-center text-uppercase header-mobile-div no-padding-left no-padding-right\">\n      <div>\n        <a routerLink=\"home\" (click)=\"myEventHandler()\">Home</a>\n      </div>\n      <div>\n        <a routerLink=\"about\" (click)=\"myEventHandler()\">About Me</a>\n      </div>\n      <div>\n        <a routerLink=\"skills\" (click)=\"myEventHandler()\">Skills</a>\n      </div>\n      <div>\n        <a routerLink=\"portfolio\" (click)=\"myEventHandler()\">Portfolio</a>\n      </div>\n      <div>\n        <a routerLink=\"experience\" (click)=\"myEventHandler()\">Experience</a>\n      </div>\n      <div>\n        <a routerLink=\"contact\" (click)=\"myEventHandler()\">Contact</a>\n      </div>\n    </div>\n  </div>\n</div>\n\n\n<!-- all router falls here-->\n<router-outlet></router-outlet>"
 
 /***/ }),
 
@@ -56,23 +56,35 @@ module.exports = "<div class=\"container-fluid text-white \">\n  <div class=\"ro
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
 
 var AppComponent = /** @class */ (function () {
-    function AppComponent() {
+    function AppComponent(router) {
+        this.router = router;
         this.title = 'Simple';
     }
+    AppComponent.prototype.ngOnInit = function () {
+    };
+    AppComponent.prototype.myEventHandler = function () {
+        //do something
+    };
     AppComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-root',
             template: __webpack_require__(/*! ./app.component.html */ "./src/app/app.component.html"),
             styles: [__webpack_require__(/*! ./app.component.css */ "./src/app/app.component.css")]
-        })
+        }),
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"]])
     ], AppComponent);
     return AppComponent;
 }());
