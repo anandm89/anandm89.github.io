@@ -41,7 +41,7 @@ module.exports = "a:hover { \r\n    color: red;\r\n    text-decoration: none;\r\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid text-white \">\n  <div class=\"row header\">\n    <div class=\"col-lg-2 col-md-1\"></div>\n    <div class=\"col-lg-8 col-md-10 text-uppercase\">\n      <table class=\"table\">\n        <thead>\n          <tr>\n\n            <th scope=\"col\">\n              <a routerLink=\"home\">Home</a>\n            </th>\n            <th scope=\"col\">\n              <a routerLink=\"about\">About Me</a>\n            </th>\n            <th scope=\"col\">\n              <a routerLink=\"skills\">Skills</a>\n            </th>\n            <th scope=\"col\">\n              <a routerLink=\"portfolio\">Portfolio</a>\n            </th>\n            <th scope=\"col\">\n              <a routerLink=\"experience\">Experience</a>\n            </th>\n            <th scope=\"col\">\n              <a routerLink=\"contact\">Contact</a>\n            </th>\n          </tr>\n        </thead>\n        <tbody>\n\n        </tbody>\n      </table>\n    </div>\n    <div class=\"col-lg-2 col-md-1\"></div>\n  </div>\n  <!--Header for Mobile view-->\n  <div class=\"row\">\n    <div class=\"col header-mobile text-white text-center\">\n      <span class=\"float-right\" data-toggle=\"collapse\" data-target=\"#collapseExample\" \n      aria-expanded=\"false\" aria-controls=\"collapseExample\">\n        <i class=\"fa fa-bars fa-2x\" aria-hidden=\"true\" style=\"padding: 20%\"></i>\n      </span>\n    </div>\n    \n  </div>\n  <div class=\"row collapse\" id=\"collapseExample\" tabindex='-1'>\n    <div id=\"main-nav\" class=\"col text-center text-uppercase header-mobile-div no-padding-left no-padding-right\">\n      <div>\n        <a routerLink=\"home\" (click)=\"myEventHandler()\">Home</a>\n      </div>\n      <div>\n        <a routerLink=\"about\" (click)=\"myEventHandler()\">About Me</a>\n      </div>\n      <div>\n        <a routerLink=\"skills\" (click)=\"myEventHandler()\">Skills</a>\n      </div>\n      <div>\n        <a routerLink=\"portfolio\" (click)=\"myEventHandler()\">Portfolio</a>\n      </div>\n      <div>\n        <a routerLink=\"experience\" (click)=\"myEventHandler()\">Experience</a>\n      </div>\n      <div>\n        <a routerLink=\"contact\" (click)=\"myEventHandler()\">Contact</a>\n      </div>\n    </div>\n  </div>\n</div>\n\n\n<!-- all router falls here-->\n<router-outlet></router-outlet>"
+module.exports = "<div class=\"container-fluid text-white \">\n  <div class=\"row header\">\n    <div class=\"col-lg-2 col-md-1\"></div>\n    <div class=\"col-lg-8 col-md-10 text-uppercase\">\n      <table class=\"table\">\n        <thead>\n          <tr>\n\n            <th scope=\"col\">\n              <a routerLink=\"home\">Home</a>\n            </th>\n            <th scope=\"col\">\n              <a routerLink=\"about\">About Me</a>\n            </th>\n            <th scope=\"col\">\n              <a routerLink=\"skills\">Skills</a>\n            </th>\n            <th scope=\"col\">\n              <a routerLink=\"portfolio\">Portfolio</a>\n            </th>\n            <th scope=\"col\">\n              <a routerLink=\"experience\">Experience</a>\n            </th>\n            <th scope=\"col\">\n              <a routerLink=\"contact\">Contact</a>\n            </th>\n          </tr>\n        </thead>\n        <tbody>\n\n        </tbody>\n      </table>\n    </div>\n    <div class=\"col-lg-2 col-md-1\"></div>\n  </div>\n  <!--Header for Mobile view-->\n  <div class=\"row\">\n    <div class=\"col header-mobile text-white text-center\">\n      <span class=\"float-right\" data-toggle=\"collapse\" data-target=\"#collapseExample\" \n      aria-expanded=\"false\" aria-controls=\"collapseExample\">\n        <i class=\"fa fa-bars fa-2x\" aria-hidden=\"true\" style=\"padding: 20% \"></i>\n      </span>\n    </div>\n    \n  </div>\n  <div class=\"row collapse\" id=\"collapseExample\" tabindex='-1'>\n    <div id=\"main-nav\" class=\"col text-center text-uppercase header-mobile-div no-padding-left no-padding-right\">\n      <div>\n        <a routerLink=\"home\" (click)=\"myEventHandler()\">Home</a>\n      </div>\n      <div>\n        <a routerLink=\"about\" (click)=\"myEventHandler()\">About Me</a>\n      </div>\n      <div>\n        <a routerLink=\"skills\" (click)=\"myEventHandler()\">Skills</a>\n      </div>\n      <div>\n        <a routerLink=\"portfolio\" (click)=\"myEventHandler()\">Portfolio</a>\n      </div>\n      <div>\n        <a routerLink=\"experience\" (click)=\"myEventHandler()\">Experience</a>\n      </div>\n      <div>\n        <a routerLink=\"contact\" (click)=\"myEventHandler()\">Contact</a>\n      </div>\n    </div>\n  </div>\n</div>\n\n\n<!-- all router falls here-->\n<router-outlet></router-outlet>\n"
 
 /***/ }),
 
@@ -110,12 +110,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _sub_modules_about_me_about_me_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./sub-modules/about-me/about-me.component */ "./src/app/sub-modules/about-me/about-me.component.ts");
 /* harmony import */ var _sub_modules_home_home_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./sub-modules/home/home.component */ "./src/app/sub-modules/home/home.component.ts");
 /* harmony import */ var _sub_modules_page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./sub-modules/page-not-found/page-not-found.component */ "./src/app/sub-modules/page-not-found/page-not-found.component.ts");
+/* harmony import */ var _sub_modules_skills_skills_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./sub-modules/skills/skills.component */ "./src/app/sub-modules/skills/skills.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -132,13 +134,15 @@ var AppModule = /** @class */ (function () {
                 _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
                 _sub_modules_about_me_about_me_component__WEBPACK_IMPORTED_MODULE_4__["AboutMeComponent"],
                 _sub_modules_home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"],
-                _sub_modules_page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_6__["PageNotFoundComponent"]
+                _sub_modules_page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_6__["PageNotFoundComponent"],
+                _sub_modules_skills_skills_component__WEBPACK_IMPORTED_MODULE_7__["SkillsComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot([
-                    { path: '', component: _sub_modules_home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"] },
+                    { "path": '', component: _sub_modules_home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"] },
                     { path: 'home', component: _sub_modules_home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"] },
                     { path: 'about', component: _sub_modules_about_me_about_me_component__WEBPACK_IMPORTED_MODULE_4__["AboutMeComponent"] },
+                    { "path": 'skills', component: _sub_modules_skills_skills_component__WEBPACK_IMPORTED_MODULE_7__["SkillsComponent"] },
                     { path: '**', component: _sub_modules_page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_6__["PageNotFoundComponent"] }
                 ])
             ],
@@ -336,6 +340,69 @@ var PageNotFoundComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], PageNotFoundComponent);
     return PageNotFoundComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/sub-modules/skills/skills.component.css":
+/*!*********************************************************!*\
+  !*** ./src/app/sub-modules/skills/skills.component.css ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".skills-bg {\r\n   /*height:100vh !important;*/\r\n  background-color:#F74D4D !important;\r\n  color: #FFFFFF !important;\r\n}\r\n.skills-bg-white {\r\n  /*height:100vh !important;*/\r\n  background-color:#ffffff !important;\r\n  color: #0A1525 !important;\r\n}\r\n.img-round {\r\n  border: 1px solid #FFFFFF;\r\n}\r\nh3 {\r\n  font-family: 'Raleway', sans-serif;\r\n  font-weight: 600;\r\n  font-size: 18px;\r\n  color: #fff;\r\n  margin: 20px 0 10px;\r\n}\r\nh4 {\r\n  font-size: 25px;\r\n  color: #222222;\r\n  font-family: 'Raleway', sans-serif;\r\n  font-weight: normal;\r\n  margin: 0px 0 25px 0;\r\n  text-align: center;\r\n  text-transform: uppercase;\r\n}\r\np {\r\n  font-size: 12px;\r\n  color: #fff;\r\n  font-weight: 600;\r\n}\r\n.skills-icon{\r\n  height: 100px;\r\n  width: 100px;\r\n  padding: 20px\r\n}\r\n"
+
+/***/ }),
+
+/***/ "./src/app/sub-modules/skills/skills.component.html":
+/*!**********************************************************!*\
+  !*** ./src/app/sub-modules/skills/skills.component.html ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container-fluid skills-bg\">\n  <br>\n  <div class=\"row\">\n    <h2 class=\"text-center col-12\">MY SKILLS</h2>\n  </div>\n  <div class=\"row\">\n    <h6 class=\"text-center col-12\">You Must Either Modify your dreams or Magnify your skills</h6>\n  </div>\n  <br>\n  <div class=\"row  text-white\">\n    <div class=\"col-md-3  text-center\">\n      <span><i class=\"fa fa-tree fa-3x rounded-circle img-round skills-icon\" aria-hidden=\"true\"></i></span>\n      <br>\n      <h3>Front-End</h3>\n      <p>Angular,Html,Bootstrap,CSS</p>\n    </div>\n    <div class=\"col-md-3  text-center\">\n      <span><i class=\"fa fa-building-o fa-3x rounded-circle img-round skills-icon\" aria-hidden=\"true\"></i></span>\n      <br>\n      <h3>Server-Side</h3>\n      <p>Java,J2EE,SpringBoot,JPA</p>\n    </div>\n    <div class=\"col-md-3  text-center\">\n      <span><i class=\"fa fa-database  fa-3x rounded-circle img-round skills-icon\" aria-hidden=\"true\"></i></span>\n      <br>\n      <h3>Database</h3>\n      <p>Mysql,MongoDb,Sql-Server</p>\n    </div>\n    <div class=\"col-md-3  text-center\">\n      <span><i class=\"fa fa-mobile  fa-3x rounded-circle img-round skills-icon\" aria-hidden=\"true\"></i></span>\n      <br>\n      <h3>Mobile App</h3>\n      <p>Andriod</p>\n    </div>\n  </div>\n  <div class=\"row col\">\n<div class=\"col\"><br></div>\n  </div>\n</div>\n<div class=\"container-fluid skills-bg-white\">\n  <br>\n  <section>\n    <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"col-sm-6 col-md-6\">\n          <h4 class=\"text-uppercase\">Technical Skills</h4>\n          <p style=\"color: #0A1525\">\n            Designed and developed modules for workforce management application using  Java, Spring boot, REST, JPA, AngularJS, MySQL, HTML,Bootstrap, CSS . Worked on various modules like employee ,dept,shift management, leave management ,holiday management  etc.\n          </p>\n\n        </div>\n        <div class=\"col-sm-6 col-md-6\">\n\n          <!--Need graph here-->\n        </div>\n      </div>\n\n      <div>\n      </div></div></section>\n</div>\n\n"
+
+/***/ }),
+
+/***/ "./src/app/sub-modules/skills/skills.component.ts":
+/*!********************************************************!*\
+  !*** ./src/app/sub-modules/skills/skills.component.ts ***!
+  \********************************************************/
+/*! exports provided: SkillsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SkillsComponent", function() { return SkillsComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var SkillsComponent = /** @class */ (function () {
+    function SkillsComponent() {
+    }
+    SkillsComponent.prototype.ngOnInit = function () {
+    };
+    SkillsComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'skills',
+            template: __webpack_require__(/*! ./skills.component.html */ "./src/app/sub-modules/skills/skills.component.html"),
+            styles: [__webpack_require__(/*! ./skills.component.css */ "./src/app/sub-modules/skills/skills.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], SkillsComponent);
+    return SkillsComponent;
 }());
 
 
